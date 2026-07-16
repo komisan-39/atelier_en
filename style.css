@@ -206,15 +206,16 @@ p {
 }
 
 /* 点線を引く */
-.menu-row::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.menu-line {
+  flex: 1;
   border-bottom: 1px dotted #c8b8a8;
-  transform: translateY(-50%);
-  z-index: 1;
+  margin: 0 8px;
 }
 
 .menu-item,
